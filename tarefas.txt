@@ -11,9 +11,25 @@ Tutorial 5-
 criei a pasta core com python ..\manage.py startapp core
 mudei verbose name apps do core
 
+criado o uml e classes adicionadas
+
 Tutorial 6 -
 criei o core e criei o home html do core - funcionando com menu e front page
  
 
 Tutorial 7 -
 
+criadas as pastas necessárias
+criação do core e html
+
+Tutorial 7 - 
+
+clientes vira aluno
+pedidos vira disciplina
+produtos vira matrícula 
+categorias vira curso
+redes sociais vira área
+
+
+começar todo o Tutorial 7 - criar o app aluno ao invés de categories e criar o resto dos apps
+mudar o html do base
