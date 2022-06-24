@@ -14,6 +14,10 @@ mudei verbose name apps do core
 criado o uml e classes adicionadas
 
 Tutorial 6 -
+criei o core e criei o home html do core - funcionando com menu e front page
+ 
+
+Tutorial 7 -
 
 criadas as pastas necessárias
 criação do core e html
