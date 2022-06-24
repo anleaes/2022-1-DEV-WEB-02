@@ -11,4 +11,44 @@ class Aluno{
     + construtor (nome, matricula, data_nascimento, endereco)
 }
 
+class Curso{
+    - nome: String  
+    - codigo_curso: int
+    - formacao: String
+    - modalidade: String
+    - duracao: String
+    - area: Area
+    + construtor (nome, codigo_curso, formacao, modalidade, duracao, area)
+}
+
+class Area{
+    - nome: String
+    - descricao: String
+    - codigo_area: int
+    - coordenador: Coordenador
+    + construtor (nome, descricao, codigo_area, coordenador)
+}
+
+class Disciplina{
+    - nome: String
+    - semestre: String
+    - codigo_disciplina: int
+    - carga_horaria: Float
+    - turno: String
+    - modalidade_disciplina: String
+    - descricao: String
+    - curso: Curso
+    - professor: Curso
+    + construtor (nome, codigo_disciplina, carga_horaria, turno, modalidade_disciplina, descricao, curso)
+}
+
+class Matricula{
+    - codigo_matricula: int
+    - tipo: String
+    - data: date
+    - aluno: aluno
+    - disciplina: disciplina
+    + construtor (codigo_matricula, tipo, data, aluno, disciplina)
+}
+
 @enduml
