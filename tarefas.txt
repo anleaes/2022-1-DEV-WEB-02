@@ -16,4 +16,7 @@ criado o uml e classes adicionadas
 Tutorial 6 -
 
 criadas as pastas necessárias
+criação do core e html
+
+Tutorial 7 - 
 

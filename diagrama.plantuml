@@ -25,8 +25,7 @@ class Area{
     - nome: String
     - descricao: String
     - codigo_area: int
-    - coordenador: Coordenador
-    + construtor (nome, descricao, codigo_area, coordenador)
+    + construtor (nome, descricao, codigo_area, )
 }
 
 class Disciplina{
@@ -38,8 +37,7 @@ class Disciplina{
     - modalidade_disciplina: String
     - descricao: String
     - curso: Curso
-    - professor: Curso
-    + construtor (nome, codigo_disciplina, carga_horaria, turno, modalidade_disciplina, descricao, curso)
+    + construtor (nome, codigo_disciplina, carga_horaria, turno, modalidade_disciplina, descricao)
 }
 
 class Matricula{
@@ -50,5 +48,12 @@ class Matricula{
     - disciplina: disciplina
     + construtor (codigo_matricula, tipo, data, aluno, disciplina)
 }
+
+
+Matricula *-- Aluno
+Matricula *-- Disciplina
+Disciplina *-- Curso
+Curso *-- Area
+Disciplina *-- Area
 
 @enduml
