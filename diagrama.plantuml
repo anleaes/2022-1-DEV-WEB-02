@@ -51,9 +51,6 @@ class Area{
 
 
 
-
-
-
 Matricula *-- Aluno
 Matricula *-- Disciplina
 Disciplina *-- Curso
