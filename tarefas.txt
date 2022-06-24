@@ -20,3 +20,10 @@ criação do core e html
 
 Tutorial 7 - 
 
+clientes vira aluno
+pedidos vira disciplina
+produtos vira matrícula 
+categorias vira curso
+redes sociais vira área
+
+
