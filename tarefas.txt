@@ -26,4 +26,6 @@ produtos vira matrícula
 categorias vira curso
 redes sociais vira área
 
+
 começar todo o Tutorial 7 - criar o app aluno ao invés de categories e criar o resto dos apps
+mudar o html do base
