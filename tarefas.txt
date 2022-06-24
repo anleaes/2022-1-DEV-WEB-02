@@ -12,4 +12,8 @@ criei a pasta core com python ..\manage.py startapp core
 mudei verbose name apps do core
 
 Tutorial 6 -
+criei o core e criei o home html do core - funcionando com menu e front page
+ 
+
+Tutorial 7 -
 
