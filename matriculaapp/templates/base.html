@@ -11,17 +11,7 @@
     <title>{% block title %}Nome do meu App{% endblock title %}</title>
 </head>
 <body>
-
-    {% block body %}
-    
-    {% endblock body %}
-    
-    <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
-    <script src="{% static 'js/jquery.mask.min.js' %}"></script>
-    <script src="{% static 'js/jquery-ui.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-</body>
-<!-- INICIO: Bloco do Bootstrap a ser incluido -->
+    <!-- INICIO: Bloco do Bootstrap a ser incluido -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/">Nome do meu App</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,4 +47,14 @@
     </div>
 </nav>
 <!-- FIM: Bloco do Bootstrap a ser incluido -->
+
+    {% block body %}
+    
+    {% endblock body %}
+    
+    <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+    <script src="{% static 'js/jquery.mask.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
 </html> 

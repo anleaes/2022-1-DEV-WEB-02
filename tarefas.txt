@@ -11,5 +11,9 @@ Tutorial 5-
 criei a pasta core com python ..\manage.py startapp core
 mudei verbose name apps do core
 
+criado o uml e classes adicionadas
+
 Tutorial 6 -
+
+criadas as pastas necessárias
 
