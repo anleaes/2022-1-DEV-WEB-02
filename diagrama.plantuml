@@ -1,0 +1,14 @@
+@startuml universidade
+
+title Matrícula de Universidade
+
+class Aluno{
+    - nome: String
+    - cpf: Integer
+    - telefone: Integer
+    - data_nascimento: date
+    - endereco: String
+    + construtor (nome, matricula, data_nascimento, endereco)
+}
+
+@enduml
