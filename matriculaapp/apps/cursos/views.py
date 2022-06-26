@@ -5,7 +5,7 @@ from .models import Category
 # Create your views here.
 
 def add_category(request):
-    template_name = 'cursos/add_category.html'
+    template_name = 'cursos/add_curso.html'
     context = {}
     if request.method == 'POST':
         form = CategoryForm(request.POST)
@@ -27,7 +27,7 @@ def list_cursos(request):
     return render(request, template_name, context)
 
 def edit_category(request, id_category):
-    template_name = 'cursos/add_category.html'
+    template_name = 'cursos/add_curso.html'
     context ={}
     category = get_object_or_404(Category, id=id_category)
     if request.method == 'POST':
