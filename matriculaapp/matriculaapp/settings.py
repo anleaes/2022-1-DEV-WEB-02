@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'disciplinas.apps.DisciplinasConfig',
     'alunos.apps.AlunosConfig',
     'orders.apps.OrdersConfig',
+    'matriculas.apps.MatriculasConfig',
+
 
 
 

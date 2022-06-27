@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    Lista de Matriculados - {{ block.super }}
+
+{% endblock title %}
+
+{% block body %}
+
+    <div class="container">
+        <br />
+        <h5><b>Lista de Matriculados</b></h5>
+        <div class="row">
+            <div class ="col-md-12">
+                <br />
+                    <a href="{% url 'matriculas:add_matricula' %}">Cadastro de nova Matricula</a>
+                <br />
+                <br />
+                <table class="table table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Codigo da Matricula</th>
+                    <th scope="col">Descricao</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for matricula in matriculas %}
+                        <tr>
+                            <th scope="row">{{ matricula.id }}</th>
+                            <td>{{ matricula.codigo }}</td>
+                            <td>{{ matricula.aluno }}</td>
+                            <td>
+                                <a href="{% url 'matriculas:edit_matricula' matricula.id %}" class="btn btn-primary btn-sm">Editar</a>
+                                <a href="{% url 'matriculas:delete_matricula' matricula.id %}" class="btn btn-danger btn-sm ">Excluir</a>
+                            </td>
+                        </tr> 
+                    {% endfor %}
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}
