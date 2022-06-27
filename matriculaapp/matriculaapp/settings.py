@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'widget_tweaks',
     'cursos.apps.CursosConfig',
     'disciplinas.apps.DisciplinasConfig',
+    'alunos.apps.AlunosConfig',
+
 
 
 ]

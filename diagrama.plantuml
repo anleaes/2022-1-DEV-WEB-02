@@ -16,11 +16,9 @@ class Disciplina{
     - semestre: String
     - codigo_disciplina: int
     - carga_horaria: Float
-    - turno: String
-    - modalidade_disciplina: String
     - descricao: String
     - curso: Curso
-    + construtor (nome, codigo_disciplina, carga_horaria, turno, modalidade_disciplina, descricao)
+    + construtor (nome, semestre, codigo_disciplina, carga_horaria, descricao, curso)
 }
 
 class Matricula{
@@ -37,8 +35,8 @@ class Curso{
     - codigo_curso: int
     - formacao: String
     - modalidade: String
-    - duracao: String
-    + construtor (nome, codigo_curso, formacao, modalidade, duracao)
+    - descricao: String
+    + construtor (nome, codigo_curso, formacao, modalidade, descricao)
 }
 
 

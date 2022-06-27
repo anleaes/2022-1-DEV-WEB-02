@@ -22,7 +22,7 @@
                     <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nome</th>
-                    <th scope="col">Semestre</th>
+                    <th scope="col">Descrição</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,6 +31,8 @@
                             <th scope="row">{{ disciplina.id }}</th>
                             <td>{{ disciplina.name }}</td>
                             <td>{{ disciplina.description }}</td>
+                            <td>{{ disciplina.curso }}</td>
+
                             <td>
                                 <a href="{% url 'disciplinas:edit_disciplina' disciplina.id %}" class="btn btn-primary btn-sm">Editar</a>
                                 <a href="{% url 'disciplinas:delete_disciplina' disciplina.id %}" class="btn btn-danger btn-sm ">Excluir</a>
