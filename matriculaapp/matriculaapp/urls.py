@@ -25,6 +25,8 @@ urlpatterns = [
     path('cursos/', include('cursos.urls', namespace='cursos')),
     path('disciplinas/', include('disciplinas.urls', namespace='disciplinas')),
     path('alunos/', include('alunos.urls', namespace='alunos')),
+    path('pedidos/', include('orders.urls', namespace='orders')),
+
 
 ]
 
