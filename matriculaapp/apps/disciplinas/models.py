@@ -9,7 +9,6 @@ class Disciplina(models.Model):
     semestre = models.CharField('Semestre', max_length=50)
     description = models.TextField('Descricao', max_length=100) 
     codigod = models.CharField('CodigoD', max_length=10)
-    carga = models.CharField('CargaHoraria', max_length=10)
     cursoss = models.CharField('Cursos', max_length=10)
     
     class Meta:
