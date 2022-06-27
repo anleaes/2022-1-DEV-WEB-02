@@ -24,13 +24,6 @@
                     <th scope="col">Nome</th>
                     <th scope="col">Sobrenome</th>
                     <th scope="col">Endereco</th>
-                    <th scope="col">Telefone</th>
-                    <th scope="col">E-mail</th>
-                    <th scope="col">Genero</th>
-                    <th scope="col">Disciplinas</th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,10 +32,8 @@
                             <th scope="row">{{ aluno.id }}</th>
                             <td>{{ aluno.first_name }}</td>
                             <td>{{ aluno.last_name }}</td>
-                            <td>{{ aluno.address }}</td>
-                            <td>{{ aluno.cell_phone }}</td>
-                            <td>{{ aluno.email }}</td>
-                            <td>{{ aluno.gender }}</td>
+
+
                             <td>
                                 {% for aluno_disciplina in aluno_disciplinas %}
                                     {% if aluno_disciplina.aluno_id == aluno.id %}

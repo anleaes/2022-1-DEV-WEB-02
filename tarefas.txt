@@ -37,3 +37,5 @@ Tutorial 7 feito criação dos cursos
 Tutorial 8 - 
 
 implementação da app areas
+
+todo
