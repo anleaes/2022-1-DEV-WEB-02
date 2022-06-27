@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'widget_tweaks',
     'cursos.apps.CursosConfig',
+    'disciplinas.apps.DisciplinasConfig',
+
 
 ]
 

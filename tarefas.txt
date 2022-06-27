@@ -25,11 +25,15 @@ criação do core e html
 Tutorial 7 - 
 
 clientes vira aluno
-pedidos vira disciplina
-produtos vira matrícula 
+clientes vira matrícula 
 categorias vira curso
-redes sociais vira área
+redes sociais vira disciplina
 
 
 começar todo o Tutorial 7 - criar o app cursos ao invés de categories e criar o resto dos apps
 mudar o html do base
+Tutorial 7 feito criação dos cursos
+
+Tutorial 8 - 
+
+implementação da app areas
