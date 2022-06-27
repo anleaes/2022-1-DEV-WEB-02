@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    Lista de Alunos - {{ block.super }}
+
+{% endblock title %}
+
+{% block body %}
+
+    <div class="container">
+        <br />
+        <h5><b>Lista de Alunos</b></h5>
+        <div class="row">
+            <div class ="col-md-12">
+                <br />
+                    <a href="{% url 'alunos:add_aluno' %}">Cadastro de novo Aluno</a>
+                <br />
+                <br />
+                <table class="table table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sobrenome</th>
+                    <th scope="col">Endereco</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Genero</th>
+                    <th scope="col">Disciplinas</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for aluno in alunos %}
+                        <tr>
+                            <th scope="row">{{ aluno.id }}</th>
+                            <td>{{ aluno.first_name }}</td>
+                            <td>{{ aluno.last_name }}</td>
+                            <td>{{ aluno.address }}</td>
+                            <td>{{ aluno.cell_phone }}</td>
+                            <td>{{ aluno.email }}</td>
+                            <td>{{ aluno.gender }}</td>
+                            <td>
+                                {% for aluno_disciplina in aluno_disciplinas %}
+                                    {% if aluno_disciplina.aluno_id == aluno.id %}
+                                        <li>{{ aluno_disciplina.disciplina }}</li>
+                                    {% endif %}
+                                {% endfor %}
+                            </td>
+                            <td>
+                                <a href="{% url 'alunos:edit_aluno' aluno.id %}" class="btn btn-primary btn-sm">Editar</a>
+                            </td>
+                            <td>
+                                <a href="{% url 'alunos:delete_aluno' aluno.id %}" class="btn btn-danger btn-sm ">Excluir</a>
+                            </td>
+                            <td>   
+                                 <a href="{% url 'orders:add_order' aluno.id %}" class="btn btn-danger btn-sm ">Pedir</a>
+                            </td>
+                        </tr> 
+                    {% endfor %}
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}

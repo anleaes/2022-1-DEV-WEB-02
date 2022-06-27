@@ -22,15 +22,15 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown05">
-                    <a class="dropdown-item" href="#">Alunos</a>
+                    <a class="dropdown-item" href="{% url 'alunos:list_alunos' %}">Alunos</a>
                     <a class="dropdown-item" href="#">Matrícula</a>
                     <a class="dropdown-item" href="{% url 'cursos:list_cursos' %}">Cursos</a>
                     <a class="dropdown-item" href="{% url 'disciplinas:list_disciplinas' %}">Disciplinas</a>
                 </div>
             </li>
         </ul>
-        <form action="#" method="GET" class="form-inline my-2 my-md-0" style="margin-right: 10px">
-            <input class="form-control" name="query" type="text" aria-label="Buscar" style="margin-right: 10px">
+        <form action="{% url 'alunos:search_alunos' %}" method="GET" class="form-inline my-2 my-md-0" style="margin-right: 10px">
+            <input class="form-control" name="query" type="text" placeholder="Sobrenome do Aluno" aria-label="Buscar" style="margin-right: 10px">
             <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>
         </form>
             <ul class="navbar-nav">
